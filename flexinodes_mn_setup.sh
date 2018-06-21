@@ -2,16 +2,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='shmn.conf'
-CONFIGFOLDER='/root/.shmn'
-COIN_DAEMON='shmnd'
-COIN_CLI='shmn-cli'
+CONFIG_FILE='flexinodes.conf'
+CONFIGFOLDER='/root/.flexinodes'
+COIN_DAEMON='flexinodesd'
+COIN_CLI='flexinodes-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/bumbacoin/test/files/2108877/shmnd-ubu64.zip'
+COIN_TGZ='https://github.com/bumbacoin/test/files/2108877/shmnd-ubu64.zip'     #######CHANGE ME
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='shmn'
-COIN_PORT=50005
-RPC_PORT=50006
+COIN_NAME='flexinodes'
+COIN_PORT=12845
+RPC_PORT=12846
 
 NODEIP=$(curl -s4 icanhazip.com)
 
