@@ -13,8 +13,8 @@ sudo git clone https://github.com/zero24x/flexinodes
 cd flexinodes 
 sudo ./autogen.sh
 sudo ./configure
-sudo make -j4     #Delete -j4 if don't know how many cores (CPU) Same for next line.
-sudo make -j4 install # optional
+sudo make    #Delete -j4 if don't know how many cores (CPU) Same for next line.
+sudo make install # optional
 cd src
 sudo strip flexinodesd
 sudo strip flexinodes-cli
