@@ -7,7 +7,7 @@ CONFIGFOLDER='/root/.flexinodes'
 COIN_DAEMON='flexinodesd'
 COIN_CLI='flexinodes-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/bumbacoin/test/files/2108877/shmnd-ubu64.zip'     #######CHANGE ME
+COIN_TGZ='https://github.com/nashsclay/Flexinodes/archive/untagged-6d9865d3ce21988503e5.tar.gz'     #######CHANGE ME
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='flexinodes'
 COIN_PORT=12845
@@ -26,13 +26,12 @@ function download_node() {
   cd $TMP_FOLDER #>/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  unzip $COIN_ZIP #>/dev/null 2>&1
+  tar -zxvf $COIN_ZIP #>/dev/null 2>&1
   #cd bin #verify
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ #>/dev/null
   rm -rf $TMP_FOLDER #>/dev/null 2>&1
-  read -p "Hello"
   clear
 }
 
