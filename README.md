@@ -38,10 +38,10 @@ Will stop your masternode and wil automatically restart
 
 This will allow you to edit your masternode's wallet (not your computer's wallet). You can also you this command after the setup to fix if you input the incorrect MN key. Once open and done making changes, press Ctrl + o then Enter to save changes, then Ctrl + x to exit. Then run the legiond stop to restart the MN.
 
-> nano ~/.Legion/Legion.conf<br />
+> nano ~/.flexinodes/flexinodes.conf<br />
 
 
-This is where your legiond file is saved to
+This is where your flexinodesd file is saved to
 > cd /usr/local/bin<br />
 
 
@@ -49,7 +49,7 @@ Return to root home folder
 > cd ~<br />
 
 
-This will give you access to the folder of Legion files. Notice the period infront of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
-> cd ~/.Legion<br />
+This will give you access to the folder of Flexinodes files. Notice the period infront of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
+> cd ~/.flexinodes<br />
 
 You can alway DM me on discord at nashsclay#6809
