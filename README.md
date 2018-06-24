@@ -52,4 +52,40 @@ Return to root home folder
 This will give you access to the folder of Flexinodes files. Notice the period infront of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
 > cd ~/.flexinodes<br />
 
+## Flexinodes Masternode Update
+
+Base script is forked from @CryptoNeverSleeps for IPSUM coin.
+
+THIS UPDATE SCRIPT IS ONLY FOR ROOT USERS
+Flexinodes 1.0.0.5 Update Script -   This script will work if your files are in /root/ directory
+Do not use the update script if your files are not in the /root/ directory.
+Example:
+/root/
+.flexinodes (Folder)(edited)
+flexinodesd
+flexinodes-cli
+flexinodes-qt
+
+Flexinodes - Update Script
+
+If you used the setup script for you MN from nashsclay, this should work for you.
+
+THIS UPDATE Script assumes the flexinodes files(flexinodesd, flexinodes-cli, flexinodes-qt) and folder .flexinodes are located in /root/
+
+DO NOT CONTINUE IF THESE FILE ARE NOT LOCATED IN /root/
+
+wget https://github.com/nashsclay/Flexinodes/blob/master/update_flexinodes_mn.sh
+
+chmod +x update_flexinodes_mn.sh
+
+./update_flexinodes_mn.sh
+
+#After update.
+
+Make sure your masternode is started
+
+flexinodes-cli masternode status
+
+If you get Status 4 - Masternode successfully started -  You are finished
+
 You can alway DM me on discord at nashsclay#6809
