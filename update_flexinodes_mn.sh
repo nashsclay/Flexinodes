@@ -6,25 +6,6 @@ echo "This script was forked from CryptoNeverSleeps"
 echo "Ubuntu 16.04 is the recommended opearting system for this install."
 echo
 
-echo "Do you want to upgrade? [y/n]"
-read DOSETUP
-
-if [[ $DOSETUP =~ "y" ]] ; then
-  sudo apt-get update
-  sudo apt-get -y upgrade
-  sudo apt autoremove -y
-
-  cd /var
-  sudo touch swap.img
-  sudo chmod 600 swap.img
-  sudo dd if=/dev/zero of=/var/swap.img bs=1024k count=3000
-  sudo mkswap /var/swap.img
-  sudo swapon /var/swap.img
-  sudo free
-  sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
-  cd
-  
-fi 
 cd ~
 
 echo "! Removing Flexinodes !"
