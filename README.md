@@ -78,7 +78,7 @@ DO NOT CONTINUE IF THESE FILE ARE NOT LOCATED IN /root/
 > chmod +x update_flexinodes_mn.sh<br />
 > ./update_flexinodes_mn.sh<br />
 
-# After Update
+### After Update
 
 Make sure your masternode is started
 
