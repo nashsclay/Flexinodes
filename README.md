@@ -74,9 +74,9 @@ THIS UPDATE Script assumes the flexinodes files(flexinodesd, flexinodes-cli, fle
 
 DO NOT CONTINUE IF THESE FILE ARE NOT LOCATED IN /root/
 
-> wget https://github.com/nashsclay/Flexinodes/blob/master/update_flexinodes_mn.sh
-> chmod +x update_flexinodes_mn.sh
-> ./update_flexinodes_mn.sh
+> wget https://github.com/nashsclay/Flexinodes/blob/master/update_flexinodes_mn.sh<br />
+> chmod +x update_flexinodes_mn.sh<br />
+> ./update_flexinodes_mn.sh<br />
 
 # After Update
 
