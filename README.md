@@ -20,6 +20,8 @@ NOTE: Don't click on the links as that will only show you code. There is no need
 > chmod +x flexinodes_mn_setup.sh<br />
 > ./flexinodes_mn_setup.sh<br />
 
+NOTE: If you have troublestarting your masternode in the wallet itself (not on the VPS) run this command in the debug console.
+> masternode start-missing (passphrase)
 
 ### Other Commands and Informaiton
 This information will be very useful once your MN is setup and ready.
@@ -28,7 +30,7 @@ Displays currention information about the masternode
 > flexinodes-cli getinfo<br />
 
 
-You want to see a 9 and that will show your Masternode is ready to go.
+You want to see status: "Masternode successfully started" and that will show your Masternode is ready to go.
 > flexinodes masternode status<br />
 
 
@@ -84,6 +86,6 @@ Make sure your masternode is started
 
 flexinodes-cli masternode status
 
-If you get Status 4 - Masternode successfully started -  You are finished
+If you get "Masternode successfully started" -  You are finished
 
 You can alway DM me on discord at nashsclay#6809
