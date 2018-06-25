@@ -1,10 +1,10 @@
 #/bin/bash
-
+clear
 cd ~
 
 echo "This script was forked from CryptoNeverSleeps"
 echo "Ubuntu 16.04 is the recommended opearting system for this install."
-echo && echo && echo
+echo
 
 echo "Do you want to upgrade? [y/n]"
 read DOSETUP
