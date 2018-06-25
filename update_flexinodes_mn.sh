@@ -26,8 +26,6 @@ if [[ $DOSETUP =~ "y" ]] ; then
   
 fi 
 cd ~
-sudo flexinodes-cli stop
-echo "! Stopping Flexinodes Daemon !"
 
 echo "! Removing Flexinodes !"
 sudo rm -f /usr/local/bin/flexinodesd
@@ -37,4 +35,5 @@ sudo rm -f /usr/local/bin/flexinodes-qt
 wget https://github.com/nashsclay/Flexinodes/releases/download/untagged-89d6a4401e5d3ca9d34e/flexinodes_simple_1.0.0.5.tar.gz
 tar -zxvf /usr/local/bin/flexinodes_simple_1.0.0.5.tar.gz
 sudo rm flexinodes_simple_1.0.0.5.tar.gz
-./usr/local/bin/flexinodesd -daemon
+echo "! Restarting Flexinodes Masternode !"
+sudo flexinodes-cli stop
