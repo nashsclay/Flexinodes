@@ -22,6 +22,8 @@ Once the coins have arrived in your wallet, create a new MN address by going to 
 
 Next go to Settings --> Options --> Wallet tab --> check Enable Coin Control features. This will allow you to easily send coins to your MN and choose ones incase you have other coins staking. Once done, restart the wallet.
 
+Now create your MN private key. This is very important! NEVER, NEVER, did I say NEVER? show this to anyone. Never. Period. Go to 
+
 
 
 ## To Install the Flexinodes Coin Masternode on VPS Server
