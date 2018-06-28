@@ -9,7 +9,22 @@ Please note to run this script you MUST:
 
 Do note that this script does enable the MN to restart if it is somehow closed. It will only make it difficult to remove the MN if you decide to sell your MN. Best way is to delete all the MN files and to restart the MN. (for more information, please vist the coin's discord)
 
-## To Install the Flexinodes Coin Masternode
+## Setup Wallet on Local Computer
+
+Download the newest wallet for your computer here: https://github.com/zero24x/flexinodes/releases
+
+Once downloaded run the wallet and allow it to fully sync (nodes are hardcoded in the wallet)
+Once fully synced, Encrypt you wallet. You can do this by selecting Settings --> Encrypt Wallet. Follow the prompts, also keeping your passphrase safe! This will allow you to send coins and make changes. Do NOT loose this passphrase. Once the wallet closes, give it a few minutes to finish encrypting (nothing will show) and restart the wallet.
+
+Now that your wallet is encrypted, and synced, it's time to send your coins to your wallet. Send your coins to your wallet as you would with any other QT wallet. I personally create a generic address then create my MN address later.
+
+Once the coins have arrived in your wallet, create a new MN address by going to Receive. Type in a label, MN1, then press Request payment. You will now have your new address for your MN.
+
+Next go to Settings --> Options --> Wallet tab --> check Enable Coin Control features. This will allow you to easily send coins to your MN and choose ones incase you have other coins staking. Once done, restart the wallet.
+
+
+
+## To Install the Flexinodes Coin Masternode on VPS Server
 
 Go through setting up the wallet and MN infomration on your computer. Then once that is ready to go, continue on to this guide. 
 
