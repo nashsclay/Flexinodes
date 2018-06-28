@@ -22,8 +22,18 @@ Once the coins have arrived in your wallet, create a new MN address by going to 
 
 Next go to Settings --> Options --> Wallet tab --> check Enable Coin Control features. This will allow you to easily send coins to your MN and choose ones incase you have other coins staking. Once done, restart the wallet.
 
-Now create your MN private key. This is very important! NEVER, NEVER, did I say NEVER? show this to anyone. Never. Period. Go to 
+Now create your MN private key. This is very important! NEVER, NEVER, did I say NEVER? show this to anyone. Never. Period. Go to Tools --> Debug console --> console tab, and type in
+> masternode genkey<br />
+This is your MN private key. Keep this safe but close by as you will need it for the MN setup.
 
+Now it's time to transfer your coins to your MN1 address. Go to Send. Then go to Inputs and select the coins you wish the wallet to choose from to send to your MN1 address. After you chose those coins, press ok. Go to Receive tab and double click on the MN1 below on that screen. Your address should appear. Copy this address and paste it on the Send screen and if done correctly the name of your MN should appear in the label box.
+
+Next type in the amount of coins you wish to send to your MN. If you wish to use them all, copy the After Fee to the Amount box. For example, my after fee looks like this ~203.99992516 FLX and I want to send this to create a MN (NOTE: I know it takes more coins then this but this is an example). So I would copy 203.99992516 and paste in the Amount box. Once done, click Send
+
+Once sent, please allow the transaction to FULLY confirm. You can see this by looking at the Transactions tab. Once your coins fully confirm you need to go back to the console (Tools --> Debug console --> console tab) and type in:
+
+> masternode outputs<br />
+This will output your output of the transaction. If you do not see anything, then your coins have not fully confirmed yet or you didn't not send a correct amount o coins to use.
 
 
 ## To Install the Flexinodes Coin Masternode on VPS Server
