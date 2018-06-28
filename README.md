@@ -39,7 +39,9 @@ This will output your output of the transaction. If you do not see anything, the
 
 You need to copy the long hash and also the 1 or 0 at the end. Place these in the same file as your private key to find easily later. Now that is all done, we need to add the masternode to the masternode.conf file.
 
-Next, go to Tools --> Open Masternode Configuration File. This will now open a .txt file where you need to enter your masternode information. Following the example already on that file, enter your information EXACTLY in the same format EXCEPT remove the # in front of your new line. The # is to comment a line. Your IP will be the IP of your VPS Server where you will setup your MN and the port should be the same. The MN1 is the name you gave to the address of where you sent your coins to for the MN so change accordingly.
+Next, go to Tools --> Open Masternode Configuration File. This will now open a .txt file where you need to enter your masternode information. Following the example already on that file, enter your information EXACTLY in the same format EXCEPT remove the # in front of your new line. The # is to comment a line. Your IP will be the IP of your VPS Server where you will setup your MN and the port should be the same. The MN1 is the name you gave to the address of where you sent your coins to for the MN so change accordingly. When you are done, go to File --> Save. Then close out of the txt file and restart the wallet.
+
+Now your wallet is open again, go to the Masternodes tab, and ensure your MN appears, click Refresh if it does not appear. Now cointinue to the next section of this guide.
 
 ## To Install the Flexinodes Coin Masternode on VPS Server
 
@@ -52,8 +54,14 @@ NOTE: Don't click on the links as that will only show you code. There is no need
 > chmod +x flexinodes_mn_setup.sh<br />
 > ./flexinodes_mn_setup.sh<br />
 
+You will need to copy and paste your masternode private key into putty when it asks. Then press Enter, when this is done, go back to your wallet, unlock your wallet in Settings. Once unlocked, start your masternode. Go to the Masternode tab, and try to start it, if it fails, try the command below in the NOTE. Once started go back to your VPS. type in
+> flexinodes-cli masternode status<br />
+
+If it says, Masternode Successfully Started then congrats you are done!
+
 NOTE: If you have troublestarting your masternode in the wallet itself (not on the VPS) run this command in the debug console.
 > masternode start-missing (passphrase)
+
 
 ### Other Commands and Informaiton
 This information will be very useful once your MN is setup and ready.
