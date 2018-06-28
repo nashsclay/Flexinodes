@@ -35,8 +35,11 @@ Once sent, please allow the transaction to FULLY confirm. You can see this by lo
 
 > masternode outputs<br />
 
-This will output your output of the transaction. If you do not see anything, then your coins have not fully confirmed yet or you didn't not send a correct amount o coins to use.
+This will output your output of the transaction. If you do not see anything, then your coins have not fully confirmed yet or you did not send a correct amount of coins to use.
 
+You need to copy the long hash and also the 1 or 0 at the end. Place these in the same file as your private key to find easily later. Now that is all done, we need to add the masternode to the masternode.conf file.
+
+Next, go to Tools --> Open Masternode Configuration File. This will now open a .txt file where you need to enter your masternode information. Following the example already on that file, enter your information EXACTLY in the same format EXCEPT remove the # in front of your new line. The # is to comment a line. Your IP will be the IP of your VPS Server where you will setup your MN and the port should be the same. The MN1 is the name you gave to the address of where you sent your coins to for the MN so change accordingly.
 
 ## To Install the Flexinodes Coin Masternode on VPS Server
 
