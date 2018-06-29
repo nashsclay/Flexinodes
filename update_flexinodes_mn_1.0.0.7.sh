@@ -15,4 +15,11 @@ sudo mv -f flexinodesd /usr/local/bin
 sudo mv -f flexinodes-tx /usr/local/bin
 sudo rm flexinodes_1007update.tar.gz
 echo "! Restarting Flexinodes Masternode !"
+cd ~/.flexinodes
+sudo rm budget.dat db.log debug.log fee_estimates.dat flexinodesd.pid mnpayments.dat mncache.dat
+sudo rm -R backups/
+sudo rm -R blocks/
+sudo rm -R chainstate/
+sudo rm -R database/
 sudo flexinodes-cli stop
+echo "Masternode restarted"
