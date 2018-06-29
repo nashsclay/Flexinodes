@@ -99,7 +99,7 @@ This will give you access to the folder of Flexinodes files. Notice the period i
 Base script is forked from @CryptoNeverSleeps for IPSUM coin.
 
 THIS UPDATE SCRIPT IS ONLY FOR ROOT USERS
-Flexinodes 1.0.0.5 Update Script -   This script will work if your files are in /root/ directory
+Flexinodes 1.0.0.7 Update Script -   This script will work if your files are in /root/ directory
 Do not use the update script if your files are not in the /root/ directory.
 Example:
 /root/
@@ -112,13 +112,13 @@ Flexinodes - Update Script
 
 If you used the setup script for you MN from nashsclay, this should work for you.
 
-THIS UPDATE Script assumes the flexinodes files(flexinodesd, flexinodes-cli, flexinodes-qt) and folder .flexinodes are located in /root/
+THIS UPDATE Script assumes the flexinodes files(flexinodesd, flexinodes-cli, flexinodes-tx) and folder .flexinodes are located in /root/
 
 DO NOT CONTINUE IF THESE FILE ARE NOT LOCATED IN /root/
 
-> wget https://github.com/nashsclay/Flexinodes/blob/master/update_flexinodes_mn.sh<br />
-> chmod +x update_flexinodes_mn.sh<br />
-> ./update_flexinodes_mn.sh<br />
+> wget https://raw.githubusercontent.com/nashsclay/Flexinodes/master/update_flexinodes_mn_1.0.0.7.sh<br />
+> chmod +x update_flexinodes_mn_1.0.0.7.sh<br />
+> ./update_flexinodes_mn_1.0.0.7.sh<br />
 
 ### After Update
 
