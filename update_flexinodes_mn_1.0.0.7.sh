@@ -12,6 +12,7 @@ wget https://github.com/nashsclay/Flexinodes/releases/download/untagged-a6ca1662
 sudo tar -xvf flexinodes_updated.1.0.0.6.tar.gz
 sudo mv -f ./flexinodes-cli /usr/local/bin
 sudo mv -f ./flexinodesd /usr/local/bin
+sudo mv -f ./flexinodes-tx /usr/local/bin
 sudo rm flexinodes_updated.1.0.0.6.tar.gz
 echo "! Restarting Flexinodes Masternode !"
 sudo flexinodes-cli stop
