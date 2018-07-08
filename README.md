@@ -116,9 +116,9 @@ THIS UPDATE Script assumes the flexinodes files(flexinodesd, flexinodes-cli, fle
 
 DO NOT CONTINUE IF THESE FILE ARE NOT LOCATED IN /root/
 
-> wget https://github.com/nashsclay/Flexinodes/releases/download/v1.0.0.8/flex_1.0.0.8_update.tar.gz<br />
-> chmod +x flex_1.0.0.8_update.tar.gz<br />
-> ./flex_1.0.0.8_update.tar.gz<br />
+> wget https://raw.githubusercontent.com/nashsclay/Flexinodes/master/update_flexinodes_mn_1.0.0.8.sh<br />
+> chmod +x update_flexinodes_mn_1.0.0.8.sh<br />
+> ./update_flexinodes_mn_1.0.0.8.sh<br />
 
 ### After Update
 
