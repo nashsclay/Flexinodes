@@ -13,7 +13,7 @@ sudo tar -xvf flex_1.0.0.8_update.tar.gz
 sudo mv -f flexinodes-cli /usr/local/bin
 sudo mv -f flexinodesd /usr/local/bin
 sudo mv -f flexinodes-tx /usr/local/bin
-sudo rm flexinodes_1007update.tar.gz
+sudo rm flex_1.0.0.8_update.tar.gz
 echo "! Restarting Flexinodes Masternode !"
 cd ~/.flexinodes
 sudo rm budget.dat db.log debug.log fee_estimates.dat flexinodesd.pid mnpayments.dat mncache.dat
